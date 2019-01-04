@@ -12,7 +12,7 @@ class Constant: NSObject {
 
   //https://medium.com/@shenghuawu/simple-ios-api-client-with-alamofire-cfb2cadf6c11
   // https://github.com/AladinWay/NetworkingExample
-  
+  // https://medium.com/@marioamgad9/swift-4-2-building-a-network-layer-using-alamofire-and-rxswift-e044b5636d55
   /*
    private extension NSURL {
    static func getBaseUrl() -> NSURL {
