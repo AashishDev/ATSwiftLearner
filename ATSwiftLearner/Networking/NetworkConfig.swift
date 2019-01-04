@@ -9,42 +9,27 @@
 import UIKit
 import Alamofire
 
-enum Endpoint {
-  case GetUserInfo(userId: String)
-  case UpdateUserInfo(userId: String)
-  
-  // MARK: - Public Properties
-  var method: Alamofire.Method {
-    switch self {
-    case .GetUserInfo:
-      return .GET
-    case .UpdateUserInfo:
-      return .PUT
-    }
+struct K {
+  struct ProductionServer {
+    static let baseURL = "http://itechnodev.com/api"
   }
   
-  var url: NSURL {
-    
-    let baseUrl = NSURL.getBaseUrl()
-    switch self {
-    case .GetUserInfo(let userId):
-      return baseUrl.URLByAppendingPathComponent("user/\(userId)")! as NSURL
-    case .UpdateUserInfo(let userId):
-      return baseUrl.URLByAppendingPathComponent("user/\(userId)")! as NSURL
-    }
+  struct APIParameterKey {
+    static let password = "password"
+    static let email = "email"
   }
-
 }
 
-private extension NSURL {
-  static func getBaseUrl() -> NSURL {
-    guard let info = Bundle.main.infoDictionary,
-      let urlString = info["BaseUrl"] as? String ,
-      let url = NSURL(string: urlString) else {
-        print("Cannot find base url")
-    }
-    return url
-  }
+enum HTTPHeaderField: String {
+  case authentication = "Authorization"
+  case contentType = "Content-Type"
+  case acceptType = "Accept"
+  case acceptEncoding = "Accept-Encoding"
 }
+
+enum ContentType: String {
+  case json = "application/json"
+}
+
+
   
-}

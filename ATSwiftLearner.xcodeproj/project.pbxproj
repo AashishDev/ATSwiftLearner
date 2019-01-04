@@ -17,6 +17,8 @@
 		1792247D21DF24450072B18B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1792247C21DF24450072B18B /* Constant.swift */; };
 		1792247F21DF245B0072B18B /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1792247E21DF245B0072B18B /* NetworkConfig.swift */; };
 		1792248121DF310E0072B18B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1792248021DF310E0072B18B /* User.swift */; };
+		1792248321DF78D80072B18B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1792248221DF78D80072B18B /* APIClient.swift */; };
+		1792248521DF78EC0072B18B /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1792248421DF78EC0072B18B /* APIRouter.swift */; };
 		62514F18578A63612256ED63 /* Pods_ATSwiftLearner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A779F055661AF6B64DB0F3D8 /* Pods_ATSwiftLearner.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		1792247C21DF24450072B18B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		1792247E21DF245B0072B18B /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		1792248021DF310E0072B18B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1792248221DF78D80072B18B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		1792248421DF78EC0072B18B /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		58384EFB471E013B7EEC1823 /* Pods-ATSwiftLearner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATSwiftLearner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATSwiftLearner/Pods-ATSwiftLearner.debug.xcconfig"; sourceTree = "<group>"; };
 		A779F055661AF6B64DB0F3D8 /* Pods_ATSwiftLearner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATSwiftLearner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,7 +87,7 @@
 				1792247921DF23BF0072B18B /* Utils */,
 				1792247821DF23B30072B18B /* Constants */,
 				1792247721DF23A50072B18B /* Controllers */,
-				1792247621DF239B0072B18B /* Model */,
+				1792247621DF239B0072B18B /* Models */,
 				1792247521DF23900072B18B /* Networking */,
 				1792246021DF237A0072B18B /* AppDelegate.swift */,
 				1792246421DF237A0072B18B /* Main.storyboard */,
@@ -100,16 +104,18 @@
 			children = (
 				1792247A21DF23E40072B18B /* Connectivity.swift */,
 				1792247E21DF245B0072B18B /* NetworkConfig.swift */,
+				1792248221DF78D80072B18B /* APIClient.swift */,
+				1792248421DF78EC0072B18B /* APIRouter.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		1792247621DF239B0072B18B /* Model */ = {
+		1792247621DF239B0072B18B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				1792248021DF310E0072B18B /* User.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		1792247721DF23A50072B18B /* Controllers */ = {
@@ -258,8 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1792247B21DF23E40072B18B /* Connectivity.swift in Sources */,
+				1792248521DF78EC0072B18B /* APIRouter.swift in Sources */,
 				1792246321DF237A0072B18B /* ViewController.swift in Sources */,
 				1792247F21DF245B0072B18B /* NetworkConfig.swift in Sources */,
+				1792248321DF78D80072B18B /* APIClient.swift in Sources */,
 				1792247D21DF24450072B18B /* Constant.swift in Sources */,
 				1792246121DF237A0072B18B /* AppDelegate.swift in Sources */,
 				1792246921DF237A0072B18B /* ATSwiftLearner.xcdatamodeld in Sources */,

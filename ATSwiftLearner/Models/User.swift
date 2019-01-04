@@ -23,3 +23,4 @@ import SwiftyJSON
       email = json["email"].stringValue
       description = json["description"].string
   }
+}
